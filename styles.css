@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #640277;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #640277;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* parte "Turn" más chica */
+.turn {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+/* parte "AR" más grande o destacada */
+.ar {
+    font-size: 3.0rem;
+    color: #ffffff;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+#busqueda {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+#resultados {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.profesional {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+button {
+    background-color: #3e0446;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5e0159;
+}
+select {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+/* Ajustes para pantallas chicas (celulares) */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    #busqueda, #resultados {
+        padding: 0.8rem;
+    }
+
+    select, input, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

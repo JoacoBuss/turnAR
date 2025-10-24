@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+     <h1><span class="turn">Turn</span><span class="ar">AR</span></h1>
+
+    </header>
+
+    <main>
+        <section id="busqueda">
+            <h2>Buscar Profesional</h2>
+            <select id="profesion">
+                <option value="">Seleccione una profesión</option>
+                <option value="medico">Médico</option>
+                <option value="abogado">Abogado</option>
+                <option value="arquitecto">Arquitecto</option>
+                <option value="ingeniero">Ingeniero</option>
+            </select>
+            <div id="filtrosMedico" style="display:none;">
+           
+                <label>Obra Social:</label>
+<select id="obraSocial">
+    <option value="">Todas</option>
+    <option value="OSDE">OSDE</option>
+    <option value="IAPOS">IAPOS</option>
+    <option value="Swiss Medical">Swiss Medical</option>
+    <option value="Sancor Seguros">Sancor Seguros</option>
+</select>
+                <label>Tiempo de espera (días):</label>
+                <input type="number" id="tiempoEspera" placeholder="Ej: 5">
+            </div><br>
+            <button onclick="buscarProfesionales()">Buscar</button><br>
+        </section>
+
+        <section id="resultados">
+            <h2>Resultados</h2>
+            <div id="listaProfesionales"></div>
+        </section>
+    </main>
+
+    <footer id="abajo">
+        <p>© 2025 DERECHOS RESERVADOS TURNAR</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
